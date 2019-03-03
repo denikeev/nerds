@@ -14,66 +14,79 @@
           <li><a href="#">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-        <ul class="user-navigation">
-          <li><a class="cart-link" href="#">Корзина</a></li>
-        </ul>
+        <div class="user-navigation">
+          <a class="cart-link" href="#">Корзина</a>
+        </div>
       </nav>
-      <div class="slider">
-        <p class="slider-slogan">Долго, дорого, скрупулезно.</p>
-        <p class="slider-desc">Математически выверенный дизайн
-          для вашего сайта или мобильного приложения.</p>
-      </div>
-      <button class="button" type="button">Узнать больше</button>
-      <ul class="slider-control">
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
    </header>
 
    <main>
     <h1 class="visually-hidden">Дизайн-студия «Nerds»</h1>
 
-     <section class="features">
+    <section class="slider">
       <h2 class="visually-hidden">Преимущества</h2>
-      <ul class="features-list">
-        <li class="feature-item">
-          <h3 class="feature-item">Веб-сайты</h3>
+      <ul class="slider-list">
+        <li class="slider-item">
+          <p class="slider-slogan"><b>Долго, дорого, скрупулезно.</b></p>
+          <p class="slider-desc">Математически выверенный дизайн
+              для вашего сайта или мобильного приложения.</p>
+          <a class="button" href="#">Узнать больше</a>
+        </li>
+        <li class="slider-item">
+          <p class="slider-slogan"><b>Любим математику
+              как никто другой</b></p>
+          <p class="slider-desc">Никакого креатива, только математические формулы
+              для расчета идеальных пропорций.</p>
+          <a class="button" href="#">Узнать больше</a>
+        </li>
+        <li class="slider-item">
+          <p class="slider-slogan"><b>Только ночь,
+              только хардкор</b></p>
+          <p class="slider-desc">Работать днем, как все? Мы против этого.
+              Ближе к полуночи работа только начинается.</p>
+          <a class="button" href="#">Узнать больше</a>
+        </li>
+      </ul>
+    </section>
+
+     <section class="services">
+      <h2 class="visually-hidden">Услуги</h2>
+      <ul class="services-list">
+        <li class="services-item">
+          <h3>Веб-сайты</h3>
           <p>Мир никогда не будет прежним
              после того как увидит ваш сайт!</p>
-          <button class="button" type="button">Заказать</button>
+          <a class="button" href="#">Заказать</a>
         </li>
-        <li class="feature-item">
-          <h3 class="feature-item">Приложения</h3>
+        <li class="services-item">
+          <h3>Приложения</h3>
           <p>Покорите топ-10 приложений в
              AppStore и Google Play</p>
-          <button class="button" type="button">Заказать</button>
+          <a class="button" href="#">Заказать</a>
         </li>
-        <li class="feature-item">
-          <h3 class="feature-item">Презентации</h3>
+        <li class="services-item">
+          <h3>Презентации</h3>
           <p>Вы даже не подозреваете,
               насколько вы изумительны!</p>
-          <button class="button" type="button">Заказать</button>
+          <a class="button" href="#">Заказать</a>
         </li>
       </ul>
      </section>
 
      <section class="about-us">
        <h2 class="visually-hidden">О студии «Nerds»</h2>
-       <b>Мы - маленькая, но гордая
-         дизайн-студия из Краснодара.
-       </b>
+       <p><b>Мы - маленькая, но гордая
+         дизайн-студия из Краснодара.</b>
+      </p>
        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
           превыше креатива. Работаем не покладая рук, как роботы</p>
-        <p>Выполняем заказы на разработку:</p>
+        <p><strong>Выполняем заказы на разработку:</strong></p>
         <ul>
           <li>Веб-сайтов любой сложности</li>
           <li>Мобильных приложений для iOS и Android</li>
           <li>Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
-
-        <img class="about-us-logo" src="" width="" height="" alt="Логотип Nerds">
-        <p>C 2004 года любим точность во всем:</p>
+        <p><b>C 2004 года любим точность во всем:</b></p>
         <table>
           <tr>
             <th>146<sup>%</sup></th>
@@ -87,7 +100,7 @@
           </tr>
         </table>
      </section>
-     
+
      <section class="customers">
        <h2 class="visually-hidden">Наши заказчики</h2>
        <ul class="customers-list">
@@ -103,12 +116,11 @@
      <iframe src="" frameborder="0"></iframe>
      <img src="" width="" height="" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
      <p class="footer-contacts">
-      Nёrds Design Studio<br>
-      191186, Санкт-Петербург,<br>
-      ул. Б. Конюшенная, д. 19/8<br>
-
-      <br>тел. +7 (812) 275-75-75
-      <button class="button" type="button">Напишите нам</button>
+      <b>Nёrds Design Studio</b>
+      <p>191186, Санкт-Петербург,<br>
+      ул. Б. Конюшенная, д. 19/8</p>
+      <span>тел. +7 (812) 275-75-75</span>
+      <a class="button" href="#">Напишите нам</a>
      </p>
 
      <p class="footer-social">
@@ -116,7 +128,7 @@
         <li><a class="social-button" href="#">VK</a></li>
         <li><a class="social-button" href="#">FB</a></li>
         <li><a class="social-button" href="#">IN</a></li>
-      </ul>      
+      </ul>
       <b>Давайте дружить, это выгодно!</b>
       <span>Скидка 10% для друзей из социальных сетей.</span>
      </p>
@@ -125,12 +137,18 @@
    <section class="modal">
      <h2>Напишите нам</h2>
       <form class="write-form" action="https://echo.htmlacademy.ru" method="">
-        <label for="user-name">Ваше имя</label>
-        <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
-        <label for="user-mail">Ваш e-mail:</label>
-        <input id="user-mail" type="email" name="mail" placeholder="email@example.com">
-        <label for="user-text">Текст письма:</label>
-        <textarea id="user-text" name="textarea" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+        <p>
+          <label for="user-name">Ваше имя</label>
+          <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="user-mail">Ваш e-mail:</label>
+          <input id="user-mail" type="email" name="mail" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="user-text">Текст письма:</label>
+          <textarea id="user-text" name="textarea" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+        </p>
         <button class="button" type="submit">Отправить</button>
       </form>
    </section>
