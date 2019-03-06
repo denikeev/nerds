@@ -1,0 +1,157 @@
+/* Глобальные стили */
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  font: inherit;
+
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  background-color: #fb565a;
+  border: none;
+}
+
+/* Стили */
+.main-header {
+  background-color: #eeeeee;
+}
+
+.main-navigation {
+  line-height: 30px;
+  font-weight: 500;  
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.main-navigation a {
+  text-transform: uppercase;
+  color: #000000;  
+}
+
+.slider {
+  background-color: #eeeeee;
+}
+
+.slider-list {
+  list-style: none;
+}
+
+.slider-slogan {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+}
+
+.services-list {
+  list-style: none;
+}
+
+.services-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.services-item:nth-child(2) .button {
+  background-color: #00ca74;
+}
+
+.services-item:last-child .button {
+  background-color: #efc84a;
+}
+
+.lead {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.heading {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.about-us ul {
+  list-style: none;
+}
+
+.heading-centered {
+  text-align: center;
+}
+
+.in-numbers th {  
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.table tr:last-child {
+  line-height: 18px;
+}
+
+.customers-list {
+  list-style: none;
+}
+
+.footer-contacts p {
+  line-height: 18px;
+}
+
+.footer-contacts b {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.footer-social b {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.footer-social span {
+  line-height: 22px;
+}
+
+.modal h2 {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.modal label {
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.modal input, 
+.modal textarea {
+  font: inherit;
+  
+  border: 2px solid #d7dcde;
+}
+
