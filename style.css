@@ -16,6 +16,12 @@ a {
   text-decoration: none;
 }
 
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .button {
   font: inherit;
   font-weight: 500;
@@ -27,6 +33,24 @@ a {
 
   background-color: #fb565a;
   border: none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 /* Состояния */
@@ -80,27 +104,42 @@ a {
 }
 
 .filter .button:active,
-.pagination-item-next:active{
+.pagination-item-next:active {
   color: rgba(0, 0, 0, 0.3);
   background-color: #d5d5d5;
 }
 
-.template-hover .button {
-
-}
-
 /* Стили */
 .main-header {
+  /* margin-bottom: 1px; */
+  padding-top: 50px;
   background-color: #eeeeee;
 }
 
 .main-navigation {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: flex-end; */
   line-height: 30px;
   font-weight: 500;  
 }
 
+.main-header-logo {
+  width: 160px;
+  height: 65px;
+}
+
 .site-navigation {
+  display: flex;
+  width: 440px;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+}
+
+.user-navigation {
+  width: 160px;
 }
 
 .main-navigation a {
@@ -122,15 +161,59 @@ a {
   font-weight: 500;
 }
 
+.services {
+  padding-top: 250px;
+  padding-bottom: 80px;
+}
+
 .services-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
+.services-item {
+  width: 260px;
+  margin-right: 140px;
+}
+
 .services-item h3 {
+  position: relative;
+
+  margin: 0;
+
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.services-item:first-child h3::before {
+  content: "";
+  position: absolute;
+  top: -170px;
+  width: 300px;
+  height: 146px;
+  background-image: url('img/illustration-1.png');
+}
+
+.services-item:nth-child(2) h3::before {
+  content: "";
+  position: absolute;
+  top: -170px;
+  width: 300px;
+  height: 146px;
+  background-image: url('img/illustration-2.png');
+}
+
+.services-item:last-child h3::before {
+  content: "";
+  position: absolute;
+  top: -170px;
+  width: 300px;
+  height: 146px;
+  background-image: url('img/illustration-3.png');
 }
 
 .services-item:nth-child(2) .button {
@@ -139,6 +222,18 @@ a {
 
 .services-item:last-child .button {
   background-color: #efc84a;
+}
+
+.aboutus-columns {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 80px;
+  padding-bottom: 70px;
+}
+
+.about-us {
+  width: 660px;
 }
 
 .lead {
@@ -160,6 +255,24 @@ a {
   text-align: center;
 }
 
+.in-numbers {
+  width: 360px;
+  padding-top: 200px;
+}
+
+.in-numbers .heading {
+  position: relative;
+}
+
+.in-numbers .heading::before {
+  content: "";
+  position: absolute;
+  top: -245px;
+  width: 360px;
+  height: 208px;
+  background-image: url('img/nerds-illustration.png');
+}
+
 .in-numbers th {  
   font-size: 45px;
   font-weight: 700;
@@ -169,8 +282,66 @@ a {
   line-height: 18px;
 }
 
+.customers {
+  margin-bottom: 80px;
+}
+
 .customers-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+}
+
+.customers-item {
+  width: 260px;
+  height: 180px;
+
+  line-height: 180px;
+  text-align: center;
+}
+
+.customers-item img {
+  opacity: 0.2;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.customers-item img:hover {
+  opacity: 1;
+}
+
+.main-footer {
+  padding-bottom: 70px;
+}
+
+.map {
+  position: relative;
+  width: 1440px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+
+.main-footer img {
+  width: 1440px;
+  height: 416px;
+}
+
+.footer-contacts {
+  position: absolute;
+  top: 55px;
+  left: 140px;
+
+  width: 320px;
+  height: 310px;
+
+  background-color: #ffffff;
+}
+
+.footer-contacts img {
+  text-align: center;
 }
 
 .footer-contacts p {
@@ -184,8 +355,22 @@ a {
   text-transform: uppercase;
 }
 
+.footer-social {
+  display: flex;
+}
+
 .footer-social ul {
+  width: 260px;
+  margin: 0;
+  margin-right: 140px;
+  padding: 0;
+
   list-style: none;
+}
+
+.footer-social p {
+  width: 600px;
+  margin: 0;
 }
 
 .footer-social b {
