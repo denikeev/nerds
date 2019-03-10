@@ -133,7 +133,9 @@ input[type="radio"].visually-hidden {
   display: flex;
   width: 440px;
   margin: 0;
+  margin-bottom: 90px;
   padding: 0;
+
 
   list-style: none;
 }
@@ -415,10 +417,63 @@ input[type="radio"].visually-hidden {
 
 /* Магазин */
 .page-title {
+  margin: 0;
+  margin-bottom: 60px;
+  padding-bottom: 105px;
+
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
   text-align: center;
+
+  background-color: #eeeeee;
+}
+
+.inner-page .container.columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filters {
+  width: 260px;
+}
+
+.filters fieldset {
+  border: none;
+}
+
+.templates {
+  width: 760px;
+  padding-bottom: 60px;
+}
+
+.sorting {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sorting-list {
+  display: flex;
+}
+
+.sorting-item {
+  margin-right: 25px;
+}
+
+.sorting-item:last-child {
+  margin-right: 90px;
+}
+
+.templates-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  margin: 0;
+  margin-bottom: 60px;
+  padding: 0;
+
+  list-style: none;
 }
 
 .filter legend,
@@ -456,6 +511,7 @@ input[type="radio"].visually-hidden {
 }
 
 .template-hover {
+  display: none;
   text-align: center;
 }
 
@@ -469,6 +525,18 @@ input[type="radio"].visually-hidden {
 .template-hover p {
   line-height: 18px;
   color: #666666;
+}
+
+.pagination-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .pagination-item a {
