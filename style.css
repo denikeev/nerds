@@ -223,6 +223,23 @@ input[type="radio"].visually-hidden {
   color: #000000;  
 }
 
+.cart-link {
+  position: relative;
+}
+
+.cart-link::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -40px;
+
+  width: 15px;
+  height: 15px;
+
+  background-image: url("img/cart-icon.svg");
+  opacity: 0.35;
+}
+
 .slider {
   position: relative;
 
@@ -233,7 +250,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   left: 50%;
   bottom: 104px;
-  z-index: 100;
+  z-index: 3;
 
   width: 160px;
   height: 18px;
@@ -535,6 +552,10 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
 }
 
+.customers {
+  margin-bottom: 70px;
+}
+
 .customers-list {
   display: flex;
   flex-wrap: wrap;
@@ -563,20 +584,16 @@ input[type="radio"].visually-hidden {
   opacity: 1;
 }
 
-.main-footer {
-  margin-top: 80px;
-  padding-bottom: 70px;
-}
-
-.map {
+.map .container {
   position: relative;
-
-  width: 1200px;
-  margin: 0 auto;
-  margin-bottom: 70px;
 }
 
-.footer-contacts {
+.map iframe {
+  width: 100%;
+  height: 416px;
+}
+
+.map-contacts {
   position: absolute;
   top: 55px;
   left: 20px;
@@ -591,12 +608,12 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
-.footer-contacts p {
+.map-contacts p {
   margin: 0;
   line-height: 18px;
 }
 
-.footer-contacts b {
+.map-contacts b {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -604,18 +621,23 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-.footer-contacts p:nth-child(1) {
+.map-contacts p:nth-child(1) {
   margin-bottom: 24px;
 }
 
-.footer-contacts p:nth-child(2) {
+.map-contacts p:nth-child(2) {
   margin-bottom: 15px;
 }
 
-.footer-contacts .button {
+.map-contacts .button {
   box-sizing: border-box;
   width: 220px;
   margin-top: 36px;
+}
+
+.main-footer {
+  margin-top: 70px;
+  padding-bottom: 70px;
 }
 
 .footer-social {
@@ -672,24 +694,75 @@ input[type="radio"].visually-hidden {
 }
 
 .modal {
+  position: fixed;
+  z-index: 4;
+  bottom: 180px;
+  left: 50%;
+
   display: none;
+  width: 760px;
+  margin-left: -480px;
+  padding: 75px 100px;
+
+  background-color: #ffffff;
+  box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75)
 }
 
 .modal h2 {
+  margin: 0;
+  margin-bottom: 35px;
+
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
+
+  color: #000000;
+}
+
+.modal-columns {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 34px;
+}
+
+.modal-columns p {
+  margin: 0;
+  width: 360px;
+}
+
+.modal-columns input[type="text"],
+.modal-columns input[type="email"],
+.modal textarea {
+  box-sizing: border-box;
+  width: 360px;
+  margin-top: 5px;
+  padding: 10px 14px;
+
+  font: inherit;
+  color: #444444;
+
+  border: 2px solid #d7dcde;
+  border-radius: 3px;
+}
+
+.write-form > p {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.modal textarea {
+  width: 100%;
+  height: 118px;
+
+  resize: none;
 }
 
 .modal label {
   line-height: 18px;
   font-weight: 700;
-}
 
-.modal input, 
-.modal textarea {
-  font: inherit;
-  border: 2px solid #d7dcde;
+  color: #000000;
 }
 
 .modal input:hover,
@@ -701,7 +774,57 @@ input[type="radio"].visually-hidden {
 .modal textarea:focus {
   outline: none;
   border-color: #000000;
+}
 
+.write-form .button {
+  box-sizing: border-box;
+  width: 260px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 80px;
+  right: 85px;
+
+  width: 30px;
+  height: 30px;
+
+  font-size: 0;
+
+  border: none;
+  background-color: transparent;
+  opacity: 0.4;
+
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 2px;
+
+  width: 27px;
+  height: 5px;
+  background-color: #fb565a;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  opacity: 1;
+}
+
+.modal-close:active {
+  opacity: 0.2;
 }
 
 
@@ -969,6 +1092,7 @@ input[type="radio"].visually-hidden {
 
 .templates {
   width: 760px;
+  margin-bottom: 60px;
 }
 
 .sorting {
@@ -1249,8 +1373,4 @@ input[type="radio"].visually-hidden {
 
   color: #000000;
   background: #eeeeee;
-}
-
-.inner-page .main-footer {
-  margin-top: 60px;
 }
