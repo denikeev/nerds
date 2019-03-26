@@ -572,10 +572,10 @@ input[type="radio"].visually-hidden {
 .customers-item img {
   opacity: 0.2;
   vertical-align: middle;
-  cursor: pointer;
 }
 
-.customers-item img:hover {
+.customers-link:hover img,
+.customers-link:focus img {
   opacity: 1;
 }
 
@@ -704,6 +704,12 @@ input[type="radio"].visually-hidden {
   box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75)
 }
 
+.modal-show {
+  display: block;
+
+  animation: bounce 0.6s;
+}
+
 .modal h2 {
   margin: 0;
   margin-bottom: 35px;
@@ -740,6 +746,11 @@ input[type="radio"].visually-hidden {
 
   border: 2px solid #d7dcde;
   border-radius: 3px;
+}
+
+.modal-columns input[type="email"]:invalid {
+  border: 2px solid #e74246;
+  color: #e74246;
 }
 
 .write-form > p {
@@ -822,7 +833,6 @@ input[type="radio"].visually-hidden {
 .modal-close:active {
   opacity: 0.2;
 }
-
 
 /* Магазин */
 .page-title {
@@ -1369,4 +1379,11 @@ input[type="radio"].visually-hidden {
 
   color: #000000;
   background: #eeeeee;
+}
+
+@keyframes bounce {
+  0% {  transform: translateY(7000px); }
+  70% { transform: translateY(-30px);  }
+  90% { transform: translateY(10px); }
+  100% {  transform: translateY(0);  }
 }
